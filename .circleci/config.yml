@@ -37,4 +37,4 @@ jobs:
       - run:
           name: docker run
           command: |
-            docker run -p 8100:80 udagram-api-user
+            docker run -p 8100 udagram-api-user
