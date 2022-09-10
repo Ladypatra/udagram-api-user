@@ -34,7 +34,7 @@ jobs:
             docker login -u $DOCKER_HUB_USER_ID -p $DOCKER_HUB_PWD
             docker tag udagram-api-user $DOCKER_HUB_USER_ID/udagram-api-user:v1
             docker push $DOCKER_HUB_USER_ID/udagram-api-user:v1
-      - run:
-          name: docker run
-          command: |
-            docker run -p 8100 udagram-api-user
+      # - run:
+      #     name: docker run
+      #     command: |
+      #       docker run -p 8100 udagram-api-user
